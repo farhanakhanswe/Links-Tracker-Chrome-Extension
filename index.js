@@ -1,20 +1,20 @@
-const linkInput = document.getElementById("link-input");
+const linkInputEl = document.getElementById("link-input");
 const saveLinkBtn = document.getElementById("save-link-btn");
-const linkList = document.getElementById("link-list");
-let myLinks = [];
+const linksList = document.getElementById("links-list");
+let trackedLinks = [];
 
 saveLinkBtn.addEventListener("click", () => {
-    myLinks.push(linkInput.value);
+    trackedLinks.push(linkInputEl.value);
     renderLinks();
 });
 
 const renderLinks = () => {
     let listItems = "";
-    for (let i = 0; i < myLinks.length; i++) {
-        listItems += `<li><a target="_blank" href="${myLinks[i]}">${myLinks[i]}</a></li>`;
+    for (let i = 0; i < trackedLinks.length; i++) {
+        listItems += `<li><a target="_blank" href="${trackedLinks[i]}">${trackedLinks[i]}</a></li>`;
     }
-    linkList.innerHTML = listItems;
-    linkInput.value = "";
+    linksList.innerHTML = listItems;
+    linkInputEl.value = "";
 }
 
 
