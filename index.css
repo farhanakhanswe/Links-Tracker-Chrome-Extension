@@ -9,18 +9,30 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input {
+#link-tracker input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid var(--theme-base-color)
 }
 
-button {
+#link-tracker button {
     background-color: var(--theme-base-color);
     color: white;
     margin: 5px 0;
     padding: 10px 20px;
     border: none;
+    font-weight: bold;
+}
+
+#link-tracker li{
+    margin-top: 5px;
+}
+
+#link-tracker li a{
+    color: var(--theme-base-color)
+}
+
+#link-tracker li a:hover{
     font-weight: bold;
 }
