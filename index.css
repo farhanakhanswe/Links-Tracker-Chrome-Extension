@@ -8,6 +8,7 @@ body {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     min-width: 400px;
+    /* background-color: black; */
 }
 
 #links-tracker input {
@@ -18,22 +19,31 @@ body {
 }
 
 #links-tracker button {
-    background-color: var(--theme-base-color);
-    color: white;
     margin: 5px 0;
     padding: 10px 20px;
-    border: none;
     font-weight: bold;
 }
 
-#links-tracker li{
-    margin-top: 5px;
-}
-
-#links-tracker li a{
+#links-tracker #delete-all-links-btn {
+    background-color: white;
+    border: 1px solid var(--theme-base-color);
     color: var(--theme-base-color)
 }
 
-#links-tracker li a:hover{
+#links-tracker #save-link-btn, #links-tracker #delete-all-links-btn:hover {
+    background-color: var(--theme-base-color);
+    color: white;
+    border: none;
+}
+
+#links-tracker li {
+    margin-top: 5px;
+}
+
+#links-tracker li a {
+    color: var(--theme-base-color)
+}
+
+#links-tracker li a:hover {
     font-weight: bold;
 }
