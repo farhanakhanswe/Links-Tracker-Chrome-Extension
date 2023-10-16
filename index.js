@@ -47,10 +47,10 @@ saveLinkBtn.addEventListener("click", () => {
 saveCurrentTabBtn.addEventListener("click", () => {
     try {
         chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-            console.log(tabs);
+            trackedLinks.push(tabs[0].url);
+            setLocalStorageItem(trackedLinks)
+            renderLinks(trackedLinks);
         });
-        setLocalStorageItem(trackedLinks)
-        renderLinks(trackedLinks);
     } catch (err) {
         alert("Something went wrong!");
     }
