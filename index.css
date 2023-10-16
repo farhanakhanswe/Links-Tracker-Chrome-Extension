@@ -30,14 +30,20 @@ body {
     color: var(--theme-base-color)
 }
 
-#links-tracker #save-link-btn, #links-tracker #delete-all-links-btn:hover {
+#links-tracker #save-link-btn, #links-tracker #save-current-tab-btn, #links-tracker #delete-all-links-btn:hover {
     background-color: var(--theme-base-color);
     color: white;
     border: none;
 }
 
+#links-tracker ul {
+    list-style: decimal;
+    margin-left: -20px;
+    color: var(--theme-base-color)
+}
+
 #links-tracker li {
-    margin-top: 5px;
+    margin-top: 7px;
 }
 
 #links-tracker li a {
