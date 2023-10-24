@@ -29,6 +29,7 @@ const setLocalStorageItem = (array) => {
 }
 
 if (linksFromLocalStorage) {
+    trackedLinks = linksFromLocalStorage;
     renderLinks(linksFromLocalStorage);
 }
 
