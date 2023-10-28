@@ -10,11 +10,19 @@
 
 <body>
     <div id="links-tracker">
-        <input type="text" id="link-input">
-        <button id="save-link-btn">SAVE LINK</button>
-        <button id="save-current-tab-btn">SAVE CURRENT TAB</button>
-        <button id="delete-all-links-btn">CLEAR</button>
-        <ul id="links-list"></ul>
+        <div class="d-flex">
+            <input type="text" id="link-input">
+            <button class="btn-theme" id="save-link-btn">SAVE</button>
+        </div>
+        <div class="d-flex justify-content-center mt-10 gap-10">
+            <button class="btn-theme" id="save-current-link-btn">CURRENT LINK</button>
+            <button class="btn-theme" id="delete-all-links-btn">CLEAR</button>
+        </div>
+        <ul id="links-list">     
+        </ul>
+        <div class="d-flex justify-content-center">
+            <button class="btn-theme" id="copy-all-links-btn">COPY ALL</button>
+        </div>
         <script src="index.js"></script>
     </div>
 </body>

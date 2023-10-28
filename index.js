@@ -1,6 +1,6 @@
 const linkInputEl = document.getElementById("link-input");
 const saveLinkBtn = document.getElementById("save-link-btn");
-const saveCurrentTabBtn = document.getElementById("save-current-tab-btn");
+const saveCurrentTabBtn = document.getElementById("save-current-link-btn");
 const deleteAllLinksBtn = document.getElementById("delete-all-links-btn");
 const linksList = document.getElementById("links-list");
 const linksFromLocalStorage = JSON.parse(localStorage.getItem("trackedLinks"));

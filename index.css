@@ -1,3 +1,7 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
 :root {
     --theme-base-color: #C3447A;
 }
@@ -8,48 +12,83 @@ body {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     min-width: 400px;
-    /* background-color: black; */
 }
 
-#links-tracker input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid var(--theme-base-color)
+.d-flex {
+    display: flex;
 }
 
-#links-tracker button {
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+/*--------------------------------------------------------------
+# Links Tracker
+--------------------------------------------------------------*/
+
+.btn-theme {
     margin: 5px 0;
     padding: 10px 20px;
     font-weight: bold;
 }
 
-#links-tracker #delete-all-links-btn, #links-tracker #save-link-btn:hover, #links-tracker #save-current-tab-btn:hover {
+.btn-theme-outline {
+    background-color: white;
+    border: 1px solid var(--theme-base-color);
+}
+
+#links-list {
+    list-style: decimal;
+    margin-top: 20px;
+    margin-left: -20px;
+    color: var(--theme-base-color)
+}
+
+#links-list li {
+    margin-top: 7px;
+    font-size: 17px;
+}
+
+#links-list li a {
+    color: var(--theme-base-color)
+}
+
+#links-list li a:hover {
+    font-weight: bold;
+}
+
+#link-input {
+    width: 95%;
+    margin-right: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--theme-base-color);
+}
+
+#delete-all-links-btn, #copy-all-links-btn:hover, #save-link-btn:hover, #save-current-link-btn:hover {
     background-color: white;
     border: 1px solid var(--theme-base-color);
     color: var(--theme-base-color)
 }
 
-#links-tracker #save-link-btn, #links-tracker #save-current-tab-btn, #links-tracker #delete-all-links-btn:hover {
+#save-link-btn, #save-current-link-btn, #copy-all-links-btn, #delete-all-links-btn:hover {
     background-color: var(--theme-base-color);
     color: white;
     border: none;
-}
-
-#links-tracker ul {
-    list-style: decimal;
-    margin-left: -20px;
-    color: var(--theme-base-color)
-}
-
-#links-tracker li {
-    margin-top: 7px;
-}
-
-#links-tracker li a {
-    color: var(--theme-base-color)
-}
-
-#links-tracker li a:hover {
-    font-weight: bold;
 }
